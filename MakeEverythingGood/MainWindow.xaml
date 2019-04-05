@@ -3,10 +3,20 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:MakeEverythingGood"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Wacom Fix Everything" Height="265" Width="440" WindowStartupLocation="CenterScreen" MinHeight="265" MaxHeight="265" MinWidth="440" MaxWidth="440" ResizeMode="NoResize" Icon="iconfinder_Brush_728914.ico">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button Content="Make Everything Good™" Grid.ColumnSpan="3" Margin="133,90,134,101" Grid.RowSpan="3" Click="Button_Click"/>
+
     </Grid>
 </Window>
